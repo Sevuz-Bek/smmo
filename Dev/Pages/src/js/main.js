@@ -4,12 +4,12 @@ import "bootstrap";
 
 window.$ = window.jQuery = $;
 
-// import day-night from "./components/day-night";
+import burgerMenu from "./components/burger-menu";
 
 
 
-// $(() => {
-//   day-night.init();
+$(() => {
+  burgerMenu.init();
 //   preloader.init();
 //   accordion.init();
 //   hamburgers.init();
@@ -31,4 +31,4 @@ window.$ = window.jQuery = $;
 //   metaSearch.init();
 //   weatherStories.init();
 //   teaserSwiper.init();
-// });
+});
