@@ -1,4 +1,8 @@
-.teasers {
+.locations {
+
+  p {
+    font-weight: 300;
+  }
 
   &__container {
     @include make-container();
@@ -10,36 +14,37 @@
     @include make-row();
   }
 
-  .teaser {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-
+  .location {
     @include make-col-ready();
     @include make-col(12);
 
     @include media-breakpoint-up(md) {
-      @include make-col(4);
+      @include make-col(6);
     }
 
-
     &-title {
-      font-weight: 600;
       font-size: 1.4rem;
-      line-height: 1.4;
-      margin-bottom: 1rem;
     }
 
     &-image {
-
+      margin: 20px 0;
       img {
         width: 100%;
       }
     }
 
-    &-text {
-      font-weight: 300;
-      margin-top: 1rem;
+    &-subtitle {
+      font-weight: 700;
+    }
+    &-phone {
+      a {
+        color: #000;
+      }
+    }
+
+    &-button {
+      margin: 40px 0;
+      max-width: 170px;
     }
   }
 }

@@ -6,3 +6,22 @@ ul {
 li {
   list-style: none;
 }
+
+.button-blue {
+  color: #fff;
+  border-radius: 4px;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  font-weight: 400;
+  background-color: $primary;
+  max-width: 244px;
+  transition: opacity .5s ease;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition-duration: 0.125s;
+  }
+}
