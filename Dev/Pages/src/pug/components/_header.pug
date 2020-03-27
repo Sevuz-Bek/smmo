@@ -1,44 +1,24 @@
-header.header
+.header.header
   .header__container
-    .header-inner
+    .header__body
       a.header__logo
-        img(src="https://picsum.photos/seed/picsum/318/77", alt="")
+        img.header__logo-img(src="https://picsum.photos/318/77/?random", alt="")
       .header__burger
         span
-      nav.header__menu
-        ul.header__list
-          li
-            a.header__link(href='#') About
-          li
-            a.header__link(href='#') Departments
-          li
-            a.header__link(href='#') Pls
-          li
-            a.header__link(href='#') Fellows
-          li
-            a.header__link(href='#') Programs
-          li
-            a.header__link(href='#') Application
-          li
-            a.header__link(href='#') Newsroom
-
-      //- a.header__logo
-      //-   img(src="../images/logo__burger-menu.gif", alt="")
-      //- .header__burger
-      //-   span
-      //- nav.header__menu
-      //-   ul.header__list
-      //-     li
-      //-       a.header__link(href="#") About
-      //-     li
-      //-       a.header__link(href="#") Departments
-      //-     li
-      //-       a.header__link(href="#") Fellows
-      //-     li
-      //-       a.header__link(href="#") Programs
-      //-     li
-      //-       a.header__link(href="#") Application
-      //-     li
-      //-       a.header__link(href="#") Newsroom
-
-
+      .header__menu-wrapper
+        nav.header__menu
+          ul.header__list
+            li
+              a.header__link(href='#') About
+            li
+              a.header__link(href='#') Departments
+            li
+              a.header__link(href='#') Pls
+            li
+              a.header__link(href='#') Fellows
+            li
+              a.header__link(href='#') Programs
+            li
+              a.header__link(href='#') Application
+            li
+              a.header__link(href='#') Newsroom

@@ -4,6 +4,7 @@
   height: 50vmax;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
   @include media-breakpoint-up(md) {
     height: 42vmax;
@@ -16,14 +17,10 @@
 
   &-inner {
     position: absolute;
-    top: 10vmax;
+    top: 6vmax;
 
     @include media-breakpoint-up(md) {
-      top: 2vmax;
-    }
-
-    @include media-breakpoint-up(lg) {
-      top: 10vmax;
+      top: 5vmax;
     }
   }
 
