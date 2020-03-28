@@ -1,0 +1,77 @@
+.checklist {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  &-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &-block {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+
+    @include make-row();
+  }
+  &-icon {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(2);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(1);
+    }
+
+    svg {
+      display: block;
+      width: 50px;
+      height: 50px;
+      fill: $primary;
+      margin: 0 auto 20px;
+
+      @include media-breakpoint-up(md) {
+
+      }
+    }
+  }
+
+  &-text {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(10);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(11);
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: .7rem;
+      line-height: 1.6;
+      text-transform: uppercase;
+      letter-spacing: .07rem;
+    }
+
+    p {
+      font-weight: 300;
+    }
+  }
+
+  &-button {
+    margin: 0 auto;
+  }
+}
