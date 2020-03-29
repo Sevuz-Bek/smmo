@@ -1,0 +1,36 @@
+.two-columns {
+  padding: 50px 0;
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  &-inner {
+    @include make-row();
+  }
+
+  &__text {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: left;
+  }
+}
