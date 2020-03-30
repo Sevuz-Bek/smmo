@@ -19,6 +19,15 @@
     @include media-breakpoint-up(md) {
       @include make-col(8);
     }
+
+    a {
+      text-decoration: underline;
+      color: #000;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   &-image {
