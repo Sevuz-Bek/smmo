@@ -1,0 +1,55 @@
+include ../mixins/_actor
+.tabs
+	.tabs__container
+		ul#myTab.nav.nav-tabs.tabs-actor(role='tablist')
+			li.nav-item.tabs-actor__item
+				a#home-tab.nav-link.active.tabs-actor__link(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Actor tab 1
+			li.nav-item.tabs-actor__item
+				a#profile-tab.nav-link.tabs-actor__link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Actor tab 2
+			li.nav-item.tabs-actor__item
+				a#messages-tab.nav-link.tabs-actor__link(data-toggle='tab', href='#messages', role='tab', aria-controls='messages', aria-selected='false') Actor tab 3
+		.tab-content
+			#home.tab-pane.active.tabs-actor__pane(role='tabpanel', aria-labelledby='home-tab')
+				.tabs-inner
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+			#profile.tab-pane.tabs-actor__pane(role='tabpanel', aria-labelledby='profile-tab')
+				.tabs-inner
+					+actor('https://picsum.photos/100/100/?random', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+			#messages.tab-pane.tabs-actor__pane(role='tabpanel', aria-labelledby='messages-tab') 
+				.tabs-inner
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('https://picsum.photos/100/100/?random', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+					+actor('../images/People-teaser.png', 'Prof. Dr. Martin L. Sos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste.')
+
+			

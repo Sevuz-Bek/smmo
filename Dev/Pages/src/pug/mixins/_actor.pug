@@ -1,0 +1,8 @@
+mixin actor(imgUrl, name, description)
+  .actor-item
+    a.actor__link(href="#")
+      .actor__img
+        img(src= imgUrl)
+      .actor-description
+        h5= name
+        p= description

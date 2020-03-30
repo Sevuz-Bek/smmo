@@ -1,0 +1,16 @@
+extends layouts/_default
+
+block variables
+	- const title = "Pls"
+
+block content
+	include components/_header
+	br
+	include mixins/_left
+	.infobox
+		.infobox__container
+			+left('Tempora et', 'https://picsum.photos/290/230/?random')
+	br
+	br
+	br
+	include components/_footer
